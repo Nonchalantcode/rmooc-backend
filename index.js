@@ -14,6 +14,7 @@ const requestLogger = (request, response, next) => {
 };
 
 app.use(requestLogger);
+app.use(express.static("build"));
 
 let notes = [
   { id: 1, content: "HTML is easy", important: true },
@@ -22,6 +23,7 @@ let notes = [
 ];
 
 app.get("/", (request, response) => {
+  console.log("using defualt rout");
   response.send("<h1>Hello world!</h1>");
 });
 
