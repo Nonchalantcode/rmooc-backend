@@ -6,6 +6,5 @@ Content-Type: application/json
 
 {
     "important": true,
-    "content" : "Hello, there",
-    "id": 20
+    "content" : "I'm cold. Will you pass me that blanket?"
 }
